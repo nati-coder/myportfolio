@@ -1,0 +1,144 @@
+/* ==========================================================
+   Custom styles for the final portfolio
+   - Dark theme is the default (body.dark-theme)
+   - Light theme = body without .dark-theme
+   ========================================================== */
+
+body { transition: background-color .3s, color .3s; }
+
+/* Keyboard focus (the base template removes outlines globally) */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 2px solid #C49B66 !important;
+  outline-offset: 2px;
+}
+
+/* ---------- Theme toggle ---------- */
+.theme-toggle {
+  width: 34px;
+  height: 34px;
+  margin: 12px 0 12px 10px;
+  padding: 0;
+  line-height: 1;
+  font-size: 14px;
+  color: #eee;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, .4);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all .3s;
+}
+.theme-toggle:hover { color: #fff; background: #C49B66; border-color: #C49B66; }
+.nav-scroll .theme-toggle { color: #222; border-color: rgba(0, 0, 0, .25); }
+.dark-theme .nav-scroll .theme-toggle { color: #eee; border-color: rgba(255, 255, 255, .3); }
+.nav-scroll .theme-toggle:hover, .dark-theme .nav-scroll .theme-toggle:hover {
+  color: #fff; background: #C49B66; border-color: #C49B66;
+}
+
+/* ---------- Readable text in light mode ---------- */
+body:not(.dark-theme) .hero p,
+body:not(.dark-theme) .services p,
+body:not(.dark-theme) .project p { color: #555; }
+body:not(.dark-theme) .hero .content .social-icon span { border-color: #ddd; }
+body:not(.dark-theme) .services .active,
+body:not(.dark-theme) .services .bord { border-color: #e6e6e6; }
+
+/* ---------- Experience / education dates ---------- */
+.resume .item li p.when { color: #C49B66; font-size: 13px; margin-top: 3px; }
+.resume .item li h6 { line-height: 1.4; }
+
+/* ---------- Skill chips ---------- */
+.chips span {
+  display: inline-block;
+  margin: 0 6px 8px 0;
+  padding: 5px 12px;
+  font-size: 12px;
+  line-height: 1.3;
+  border: 1px solid rgba(196, 155, 102, .6);
+  border-radius: 20px;
+  color: #eee;
+  background: rgba(255, 255, 255, .06);
+}
+.skill-group { margin-bottom: 18px; }
+.skill-group:last-child { margin-bottom: 0; }
+.skill-group h6 {
+  margin-bottom: 10px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  color: #C49B66;
+}
+
+/* ---------- Project cards ---------- */
+.project {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #fff;
+  border: 1px solid #eee;
+  box-shadow: 0 0 30px -4px rgba(0, 0, 0, .12);
+  transition: transform .3s, box-shadow .3s;
+}
+.dark-theme .project { background: #181818; border-color: #262626; box-shadow: none; }
+.project:hover { transform: translateY(-6px); }
+.project-thumb { aspect-ratio: 16 / 10; overflow: hidden; background: #111; }
+.project-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .5s;
+}
+.project:hover .project-thumb img { transform: scale(1.05); }
+.project-body { display: flex; flex-direction: column; flex: 1; padding: 24px 22px 22px; }
+.project-body h5 { margin-bottom: 12px; font-size: 22px; font-weight: 700; }
+.project-body p { margin-bottom: 16px; font-size: 14px; }
+.project .chips { margin-top: auto; margin-bottom: 14px; }
+.project .chips span { color: #8a6a3d; background: transparent; }
+.dark-theme .project .chips span { color: #d9b98a; }
+.project-links { display: flex; flex-wrap: wrap; gap: 10px; }
+.btn-proj {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  color: #8a6a3d;
+  border: 1px solid #C49B66;
+  transition: all .3s;
+}
+.dark-theme .btn-proj { color: #C49B66; }
+.btn-proj:hover, .dark-theme .btn-proj:hover { color: #fff; background: #C49B66; }
+.btn-proj-primary, .dark-theme .btn-proj-primary { color: #fff; background: #C49B66; }
+.btn-proj-primary:hover, .dark-theme .btn-proj-primary:hover {
+  color: #8a6a3d; background: transparent;
+}
+.dark-theme .btn-proj-primary:hover { color: #C49B66; }
+
+/* ---------- Contact links ---------- */
+.contact .info a { color: inherit; transition: color .3s; }
+.contact .info a:hover { color: #C49B66; }
+.contact .messages .alert { padding: 12px 15px; margin-bottom: 15px; }
+.contact .messages .alert-success { background: rgba(40, 167, 69, .2); }
+.contact .messages .alert-danger { background: rgba(220, 53, 69, .25); }
+.contact .messages .close { float: right; background: transparent; border: 0; color: #fff; cursor: pointer; }
+
+/* ---------- Mobile menu ---------- */
+@media screen and (max-width: 991px) {
+  .navbar .theme-toggle { display: block; margin: 10px auto; color: #fff; }
+  .nav-scroll .navbar-collapse .theme-toggle { color: #fff; border-color: rgba(255, 255, 255, .4); }
+}
+
+/* ---------- Smaller hero headline on phones ---------- */
+@media screen and (max-width: 767px) {
+  .header .caption h1 { font-size: 40px; }
+}
+@media screen and (max-width: 480px) {
+  .header .caption h1 { font-size: 30px; }
+  .header .caption h2 { font-size: 22px; }
+  .section-padding { padding: 70px 0; }
+}

@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#131414" />
+
+    <title>Natnial Asegdew Tilahun | Full Stack Developer &amp; System Administrator</title>
+    <meta
+      name="description"
+      content="Portfolio of Natnial Asegdew Tilahun, a Full Stack Web Developer (MERN &amp; PERN) and System Administrator based in Ethiopia."
+    />
+    <meta
+      name="keywords"
+      content="Natnial Tilahun, full stack developer, MERN, PERN, PostgreSQL, MySQL, system administrator, Ethiopia, portfolio"
+    />
+    <meta name="author" content="Natnial Asegdew Tilahun" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Natnial Asegdew Tilahun | Full Stack Developer &amp; System Administrator"
+    />
+    <meta
+      property="og:description"
+      content="Full Stack Web Developer (MERN &amp; PERN) and System Administrator. Explore my projects, skills and experience."
+    />
+
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:100i,300,400,600,700"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/plugins.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+
+  <body class="dark-theme">
+    <script>
+      // Dark is the default; restore the visitor's saved choice before first paint.
+      try {
+        if (localStorage.getItem("theme") === "light") {
+          document.body.classList.remove("dark-theme");
+        }
+      } catch (e) {}
+    </script>
+
+    <!-- Loading -->
+    <div class="loading">
+      <div class="text-center middle">
+        <div class="lds-ellipsis">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="logi" href="#">Natnial</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="icon-bar"><i class="fas fa-bars"></i></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" data-scroll-nav="0">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-scroll-nav="1">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-scroll-nav="2">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-scroll-nav="3">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-scroll-nav="4">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-scroll-nav="5">Contact</a>
+            </li>
+            <li class="nav-item">
+              <button
+                type="button"
+                class="theme-toggle"
+                id="themeToggle"
+                aria-label="Switch to light mode"
+                title="Switch to light mode"
+              >
+                <i class="fas fa-sun"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header
+      class="header valign bg-img"
+      data-scroll-index="0"
+      data-overlay-dark="5"
+      data-background="img/bg1.jpg"
+      data-stellar-background-ratio="0.5"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="vertical-center full-width text-center caption">
+            <h2>I Love To Develop</h2>
+            <h1 class="cd-headline clip">
+              <span class="blc">I Am </span>
+              <span class="cd-words-wrapper">
+                <b class="is-visible">Natnial Tilahun</b>
+                <b>a Developer</b>
+                <b>a SysAdmin</b>
+              </span>
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="arrow">
+        <a href="#" data-scroll-nav="1" aria-label="Scroll to About">
+          <i class="fas fa-chevron-down"></i>
+        </a>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section class="hero section-padding" data-scroll-index="1">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="hero-img mb-md50">
+              <img src="img/hero.jpg" alt="Portrait of Natnial Asegdew Tilahun" />
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="content">
+              <h4 class="title title-left">
+                Full Stack Web Developer &amp; System Administrator
+              </h4>
+              <p>
+                I am <span>Natnial Asegdew Tilahun</span>, a Full Stack Developer
+                dedicated to building seamless, end-to-end digital experiences.
+                With a Computer Science degree from Wolkite University and a
+                focus on the modern web, I build scalable back-end systems with
+                the MERN and PERN stacks and connect them to intuitive,
+                responsive front-end interfaces. Great software isn't just
+                clean code; it's a tool that solves real-world data challenges
+                and improves how organizations work.
+              </p>
+              <p>
+                Since 2017 I have worked in IT, first as a Land Information
+                System Technician at the North Shoa Land Department, and since
+                September 2025 as System Administrator at Selam Children
+                Village in Addis Ababa, where I manage servers, networks, backups
+                and deployments. That mix lets me cover a project from database
+                design and API development to the final front-end polish and
+                getting it live on a secure server.
+              </p>
+
+              <div class="social-icon">
+                <a
+                  href="https://github.com/nati-coder"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                >
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                </a>
+                <a href="mailto:natnial99@gmail.com" aria-label="Email">
+                  <span class="icon"><i class="fas fa-envelope"></i></span>
+                </a>
+                <a href="tel:+251922465661" aria-label="Phone">
+                  <span class="icon"><i class="fas fa-phone"></i></span>
+                </a>
+              </div>
+
+              <span class="buton text-center">
+                <a
+                  href="#0"
+                  front="Hire Me"
+                  back="&#xf1d8;"
+                  data-scroll-nav="5"
+                ></a>
+              </span>
+              <span class="buton buton-bord text-center">
+                <a
+                  href="cv.pdf"
+                  front="Download C.V"
+                  back="&#xf019;"
+                  download="Natnial_Asegdew_Tilahun_CV.pdf"
+                ></a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section
+      class="resume bg-img"
+      data-overlay-dark="8"
+      data-background="img/b4.jpg"
+      data-scroll-index="2"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="item mb-md50">
+              <span class="icon icon-pencil"></span><br />
+              <h5 class="title title-left">Education</h5>
+              <ul>
+                <li>
+                  <h6>Computer Science</h6>
+                  <p>Wolkite University</p>
+                  <p class="when">2011 &ndash; 2015</p>
+                </li>
+                <li>
+                  <h6>AI-Powered Full-Stack Web Development</h6>
+                  <p>Evangadi (Certificate)</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="item mb-md50">
+              <span class="icon icon-briefcase"></span><br />
+              <h5 class="title title-left">Experience</h5>
+              <ul>
+                <li>
+                  <h6>System Administrator</h6>
+                  <p>Selam Children Village, Addis Ababa</p>
+                  <p class="when">Sep 2025 &ndash; Present</p>
+                </li>
+                <li>
+                  <h6>Land Information System Technician</h6>
+                  <p>North Shoa Land Department</p>
+                  <p class="when">Feb 2017 &ndash; Sep 2025</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="item skills">
+              <span class="icon icon-layers"></span><br />
+              <h5 class="title title-left">My Skills</h5>
+
+              <div class="skill-group">
+                <h6>Full Stack</h6>
+                <div class="chips">
+                  <span>MERN Stack</span><span>PERN Stack</span
+                  ><span>React</span><span>Node.js</span><span>JavaScript</span
+                  ><span>HTML</span>
+                </div>
+              </div>
+              <div class="skill-group">
+                <h6>Databases</h6>
+                <div class="chips">
+                  <span>PostgreSQL</span><span>MySQL</span
+                  ><span>MS SQL Server</span>
+                </div>
+              </div>
+              <div class="skill-group">
+                <h6>Servers &amp; Systems</h6>
+                <div class="chips">
+                  <span>Server Management</span><span>Deployment</span
+                  ><span>Networking</span><span>Security</span
+                  ><span>Backup &amp; Recovery</span><span>Bash</span>
+                </div>
+              </div>
+              <div class="skill-group">
+                <h6>Other Languages &amp; Tools</h6>
+                <div class="chips">
+                  <span>Python</span><span>Java</span><span>C / C++</span
+                  ><span>Ruby</span><span>ArcGIS</span><span>QGIS</span>
+                </div>
+              </div>
+              <div class="skill-group">
+                <h6>Spoken Languages</h6>
+                <div class="chips">
+                  <span>Amharic (native)</span><span>English (B2)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services section-padding" data-scroll-index="3">
+      <div class="container">
+        <div class="row">
+          <div class="section-head full-width">
+            <h4 class="title">What I Do</h4>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="item mb-md50">
+              <span class="icon icon-laptop"></span>
+              <h6>Full Stack Development</h6>
+              <p>
+                Responsive web apps built with the MERN and PERN stacks: React
+                front ends, Node.js and Express back ends, and secure REST APIs.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 active bolt">
+            <div class="item mb-md50">
+              <span class="icon icon-layers"></span>
+              <h6>Database Management</h6>
+              <p>
+                Designing and managing PostgreSQL and MySQL databases, with
+                solid schemas, reliable backups and protected data.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="item mb-md50">
+              <span class="icon icon-cloud"></span>
+              <h6>Server &amp; Deployment</h6>
+              <p>
+                Setting up, monitoring and securing servers, and deploying web
+                applications and updates to production.
+              </p>
+            </div>
+          </div>
+          <div class="bord full-width"></div>
+          <div class="col-lg-4 col-md-6">
+            <div class="item mb-md50">
+              <span class="icon icon-gears"></span>
+              <h6>System Administration</h6>
+              <p>
+                Managing systems, user accounts and permissions, and
+                troubleshooting hardware and software so that teams can keep
+                working.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 active">
+            <div class="item mb-sm50">
+              <span class="icon icon-shield"></span>
+              <h6>Network &amp; Security</h6>
+              <p>
+                Protecting systems with network administration, security
+                patching, malware protection and intrusion prevention.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="item">
+              <span class="icon icon-lifesaver"></span>
+              <h6>Training &amp; Support</h6>
+              <p>
+                Technical support, documentation, manuals and hands-on training
+                for the people who use the systems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Numbers -->
+    <div
+      class="numbers bg-img"
+      data-stellar-background-ratio="0.5"
+      data-overlay-dark="8"
+      data-background="img/b3.jpg"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="item mb-md50">
+              <span class="icon icon-browser"></span>
+              <h2 class="count">3</h2>
+              <p>Live Projects</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="item mb-md50">
+              <span class="icon icon-briefcase"></span>
+              <h2><span class="count">9</span>+</h2>
+              <p>Years in IT</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="item mb-sm50">
+              <span class="icon icon-puzzle"></span>
+              <h2 class="count">2</h2>
+              <p>Stacks: MERN &amp; PERN</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="item">
+              <span class="icon icon-layers"></span>
+              <h2 class="count">2</h2>
+              <p>Databases: PostgreSQL &amp; MySQL</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <section class="portfolio section-padding" data-scroll-index="4">
+      <div class="container">
+        <div class="row">
+          <div class="section-head full-width">
+            <h4 class="title">My Projects</h4>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- Project 1 -->
+          <div class="col-lg-4 col-md-6 mb-md50">
+            <article class="project">
+              <div class="project-thumb">
+                <img
+                  src="img/projects/evangadi-forum.jpg"
+                  alt="AI-Powered Evangadi Forum logo"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-body">
+                <h5>AI-Powered Evangadi Forum</h5>
+                <p>
+                  A full-stack discussion platform where learners ask technical
+                  questions and share answers. It adds AI semantic search, an AI
+                  draft coach, and a document knowledge base that answers
+                  questions with Retrieval-Augmented Generation (RAG).
+                </p>
+                <div class="chips">
+                  <span>React</span><span>Node.js</span><span>Express</span
+                  ><span>MySQL</span><span>Gemini AI</span><span>RAG</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    class="btn-proj btn-proj-primary"
+                    href="https://evaforum.natnial.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fas fa-external-link-alt"></i> Live Site</a
+                  >
+                  <a
+                    class="btn-proj"
+                    href="https://github.com/nati-coder/evangadi-forum"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fab fa-github"></i> GitHub</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="col-lg-4 col-md-6 mb-md50">
+            <article class="project">
+              <div class="project-thumb">
+                <img
+                  src="img/projects/chatgpt.svg"
+                  alt="ChatGPT logo"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-body">
+                <h5>ChatGPT Clone</h5>
+                <p>
+                  A full-stack ChatGPT-style app with secure sign-up and login,
+                  an interactive AI chat interface, and persistent chat history
+                  so you can return to and continue earlier conversations.
+                </p>
+                <div class="chips">
+                  <span>React</span><span>Node.js</span><span>Express</span
+                  ><span>MySQL</span><span>JWT Auth</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    class="btn-proj btn-proj-primary"
+                    href="https://gpt.natnial.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fas fa-external-link-alt"></i> Live Site</a
+                  >
+                  <a
+                    class="btn-proj"
+                    href="https://github.com/nati-coder/chatgpt-clone"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fab fa-github"></i> GitHub</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="col-lg-4 col-md-6 mb-md50">
+            <article class="project">
+              <div class="project-thumb">
+                <img
+                  src="img/projects/netflix.svg"
+                  alt="Netflix logo"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-body">
+                <h5>Netflix Clone</h5>
+                <p>
+                  A responsive Netflix-inspired movie browsing interface that
+                  pulls movie and TV data from the TMDB API, with a hero banner,
+                  category rows and carousels. Built with a team as a university
+                  group project.
+                </p>
+                <div class="chips">
+                  <span>React</span><span>Vite</span><span>JavaScript</span
+                  ><span>TMDB API</span><span>Swiper</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    class="btn-proj btn-proj-primary"
+                    href="https://netflix.natnial.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fas fa-external-link-alt"></i> Live Site</a
+                  >
+                  <a
+                    class="btn-proj"
+                    href="https://github.com/nati-coder/netflix-clone"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fab fa-github"></i> GitHub</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <span class="buton">
+              <a
+                href="https://github.com/nati-coder"
+                target="_blank"
+                rel="noopener noreferrer"
+                front="More On GitHub"
+                back="&#xf09b;"
+                style="width: 170px"
+              ></a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section
+      class="contact section-padding bg-img"
+      data-overlay-dark="8"
+      data-background="img/b5.jpg"
+      data-scroll-index="5"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="section-head full-width mb-50">
+            <h4 class="title">Get In Touch</h4>
+          </div>
+
+          <form
+            class="form full-width"
+            id="contact-form"
+            method="post"
+            action="contact.php"
+          >
+            <div class="messages"></div>
+
+            <div class="controls">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input
+                      id="form_name"
+                      type="text"
+                      name="name"
+                      placeholder="Name *"
+                      required="required"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input
+                      id="form_email"
+                      type="email"
+                      name="email"
+                      placeholder="Email *"
+                      required="required"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input
+                      id="form_subject"
+                      type="text"
+                      name="subject"
+                      placeholder="Subject"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea
+                      id="form_message"
+                      name="message"
+                      placeholder="Your Message *"
+                      rows="4"
+                      required="required"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <span class="buton buton-lg">
+                      <button
+                        type="submit"
+                        front="Send Message"
+                        back="&#xf35d;"
+                      ></button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <div class="info full-width">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="item mb-sm50">
+                  <span class="icon icon-mobile"></span>
+                  <div class="cont">
+                    <h6>Phone</h6>
+                    <p><a href="tel:+251922465661">+251 922 465 661</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="item mb-sm50">
+                  <span class="icon icon-envelope"></span>
+                  <div class="cont">
+                    <h6>Email</h6>
+                    <p>
+                      <a href="mailto:natnial99@gmail.com">natnial99@gmail.com</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="item">
+                  <span class="icon icon-map-pin"></span>
+                  <div class="cont">
+                    <h6>Address</h6>
+                    <p>Addis Ababa, Ethiopia</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>
+        &copy; <span id="year">2026</span> Natnial Asegdew Tilahun. All rights
+        reserved.
+      </p>
+    </footer>
+
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrollIt.min.js"></script>
+    <script src="js/animated.headline.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
